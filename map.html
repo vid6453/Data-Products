@@ -131,6 +131,8 @@ $(document).ready(function () {
 </div>
 
 
+<div id="link-to-jhu" class="section level3">
+<h3>LINK TO JHU</h3>
 <pre class="r"><code>library(magrittr)</code></pre>
 <pre><code>## Warning: package 'magrittr' was built under R version 3.2.5</code></pre>
 <pre class="r"><code>library(leaflet)</code></pre>
@@ -197,18 +199,14 @@ $(document).ready(function () {
 ## 'crosstalk'</code></pre>
 <pre><code>## Warning: replacing previous import by 'shiny::HTML' when loading
 ## 'crosstalk'</code></pre>
-<div id="creating-map" class="section level3">
-<h3>creating map</h3>
-<p>Creating a link to JHU using leaflet and markers</p>
-<pre class="r"><code>my_map &lt;- leaflet() %&gt;%
-  addTiles()
-JHU &lt;- c(&quot;&lt;a href= 'https://www.jhu.edu/' &gt;JHU&lt;/a&gt;&quot;)
-leaflet() %&gt;%
-  addTiles() %&gt;%
-  addMarkers(lat=54.735, lng=29.022, popup = JHU) %&gt;%
-  addLegend(labels = Sys.Date(),colors = c(&quot;white&quot;))</code></pre>
-<div id="htmlwidget-673e4d3af3c61e237257" style="width:672px;height:480px;" class="leaflet html-widget"></div>
-<script type="application/json" data-for="htmlwidget-673e4d3af3c61e237257">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"maxNativeZoom":null,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"continuousWorld":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":null,"unloadInvisibleTiles":null,"updateWhenIdle":null,"detectRetina":false,"reuseTiles":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[54.735,29.022,null,null,null,{"clickable":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"<a href= 'https://www.jhu.edu/' >JHU<\/a>",null,null,null,null,null,null]},{"method":"addLegend","args":[{"colors":["white"],"labels":["2018-01-08"],"na_color":null,"na_label":"NA","opacity":0.5,"position":"topright","type":"unknown","title":null,"extra":null,"layerId":null,"className":"info legend"}]}],"limits":{"lat":[54.735,54.735],"lng":[29.022,29.022]}},"evals":[],"jsHooks":[]}</script>
+</div>
+<div id="jhu" class="section level2">
+<h2>JHU</h2>
+<div id="january-2018" class="section level3">
+<h3>08 January 2018</h3>
+<div id="htmlwidget-f5377c06d1c46ebb8134" style="width:672px;height:480px;" class="leaflet html-widget"></div>
+<script type="application/json" data-for="htmlwidget-f5377c06d1c46ebb8134">{"x":{"options":{"crs":{"crsClass":"L.CRS.EPSG3857","code":null,"proj4def":null,"projectedBounds":null,"options":{}}},"calls":[{"method":"addTiles","args":["//{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",null,null,{"minZoom":0,"maxZoom":18,"maxNativeZoom":null,"tileSize":256,"subdomains":"abc","errorTileUrl":"","tms":false,"continuousWorld":false,"noWrap":false,"zoomOffset":0,"zoomReverse":false,"opacity":1,"zIndex":null,"unloadInvisibleTiles":null,"updateWhenIdle":null,"detectRetina":false,"reuseTiles":false,"attribution":"&copy; <a href=\"http://openstreetmap.org\">OpenStreetMap<\/a> contributors, <a href=\"http://creativecommons.org/licenses/by-sa/2.0/\">CC-BY-SA<\/a>"}]},{"method":"addMarkers","args":[54.735,29.022,null,null,null,{"clickable":true,"draggable":false,"keyboard":true,"title":"","alt":"","zIndexOffset":0,"opacity":1,"riseOnHover":false,"riseOffset":250},"<a href= 'https://www.jhu.edu/' >JHU<\/a>",null,null,null,null,null,null]}],"limits":{"lat":[54.735,54.735],"lng":[29.022,29.022]}},"evals":[],"jsHooks":[]}</script>
+</div>
 </div>
 
 
