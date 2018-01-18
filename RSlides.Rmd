@@ -1,0 +1,32 @@
+---
+title: "MyRPresentation"
+author: "Vidya"
+date: "January 18, 2018"
+output:
+  ioslides_presentation: default
+  slidy_presentation: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+```
+
+## plot_ly
+
+```{r, fig.align='center', message = FALSE,eval=TRUE}
+library(plotly)
+
+df <- data.frame(x =  1:10, y = (1:10)^2)
+
+p <- ggplot(df, aes(x = x, y = y)) + geom_line() + labs(x = "X", y = "Y", title = "X and Y")
+
+ggplotly(p)
+```
+
+## Slide with Plotly
+
+```{r, fig.align='center', message = FALSE}
+library(plotly)
+p <- plot_ly(data = iris, x = ~Sepal.Length, y = ~Petal.Length)
+p
+```
